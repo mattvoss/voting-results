@@ -1,0 +1,30 @@
+<form class="bootstrap-admin-login-form">
+    <h2 class="login-title">Site Information</h1>
+    <p class="text-muted">Enter your Site ID</p>
+    <div class="form-group scrollable-dropdown-menu clearfix">
+      <div class="input-field">
+        <input type="text" name="siteid" id="siteid" placeholder="Enter your Site ID" class="input-lg siteid" value="{{siteId}}" \>
+      </div>
+      <div class="keyboard-field">
+        <button type="button" class="btn btn-success keyboard"><i class="fa fa-keyboard-o fa-2x"></i></button>
+      </div>
+    </div>
+    {{#if site.company}}
+    <div id="siteIdAddress">
+      <address>
+        <strong>{{site.company}}</strong><br>
+        {{site.street1}}<br>
+        {{#if site.street2}}
+        {{site.street2}}<br>
+        {{/if}}
+        {{site.city}}, {{site.state}} {{site.zipCode}}<br>
+      </address>
+    </div>
+    {{else}}
+    <div class="alert alert-danger">We are unable to find this Site ID.</div>
+    {{/if}}
+    <div class="form-group clearfix">
+      <button type="button" class="btn btn-lg prev">Previous</button> <button type="button" class="btn btn-lg btn-primary next pull-right" {{#empty site}}disabled="disabled"{{/empty}}>Next</button>
+    </div>
+</form>
+

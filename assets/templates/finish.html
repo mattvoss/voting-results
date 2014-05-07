@@ -1,0 +1,33 @@
+<div class="col-md-12">
+    <div class="page-header">
+      <h1>Your Vote(s) have been recorded</h1>
+    </div>
+    <div class="col-md-4">
+      <h4>Your Name</h3>
+      <hr />
+      <p>{{lastname}}, {{firstname}}</p>
+      <p>{{registrantId}}</p>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Site Voted For</h4>
+      <hr />
+      <address>
+        <strong>{{site.company}}: {{site.siteId}}</strong><br>
+        {{site.street1}}<br />
+        {{#if site.street2}}
+        {{site.street2}}<br />
+        {{/if}}
+        {{site.city}}, {{site.state}} {{site.zip}}<br />
+      </address>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Voted As</h4>
+      <hr />
+      <p>{{capitalizeFirst voterType}}</p>
+    </div>
+</div>
+<div class="col-md-12">
+  <button type="button" class="btn btn-lg done">Done Voting</button>
+</div>

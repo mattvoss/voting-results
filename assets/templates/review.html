@@ -1,0 +1,73 @@
+<div class="col-md-8">
+    <div class="page-header">
+      <h1>Review</h1>
+    </div>
+    <div class="col-md-4">
+      <h4>Your Name</h3>
+      <hr />
+      <p>{{lastname}}, {{firstname}}</p>
+      <p>{{registrantId}}</p>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Site Voting For</h4>
+      <hr />
+      <address>
+        <strong>{{site.company}}: {{site.siteId}}</strong><br>
+        {{site.street1}}<br />
+        {{#if site.street2}}
+        {{site.street2}}<br />
+        {{/if}}
+        {{site.city}}, {{site.state}} {{site.zip}}<br />
+      </address>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Voting As</h4>
+      <hr />
+      <p>{{capitalizeFirst voterType}}</p>
+    </div>
+
+    <div class="col-md-12">
+      <h3>Votes Cast</h3>
+      <hr />
+    </div>
+
+    <div class="col-md-11">
+      <table class="table table-striped vote-table">
+        <thead>
+          <tr>
+            <th>Office</th>
+            <th>Selected</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="votes">
+
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-1">
+      <br />
+      <button type="button" class="btn btn-lg btn-default up" ><i class="fa fa-arrow-up"></i></button> <br />
+      <br />
+      <button type="button" class="btn btn-lg btn-default down" ><i class="fa fa-arrow-down"></i></button>
+    </div>
+</div>
+
+<div class="col-md-4">
+  <div class="col-md-12 alert alert-success">
+    <h2>Instructions</h2>
+    <ol>
+        <li>Please review your information.</li>
+        <li>If there is an issue please either click the "Start Over" link or "Change Vote" button.</li>
+        <li>If you are satisfied that all the information is correct please click the "Cast Vote" button.</li>
+        <li class="text-danger">Warning: Until you review and cast your votes they will not be recorded.</li>
+        <li>If you have any issues please see the voting officer.</li>
+    </ol>
+  </div>
+
+  <div class="col-md-12">
+    <button type="button" class="btn btn-lg btn-danger cast-vote" >Cast Vote(s)</button>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+{{#eachIndex results}}
+<div class="col-md-12">
+    <b>{{item.name}}</b>: {{toFixed item.percent}}% ({{item.candidateVote}})
+</div>
+{{/eachIndex}}

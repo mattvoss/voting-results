@@ -1,0 +1,32 @@
+<form class="bootstrap-admin-login-form">
+    <h2 class="login-title">Voter Type</h1>
+    <small>
+    <p class="voter-label"><strong>Previously voted for your site:</strong></p>
+    <table class="table table-striped voter-table">
+      <thead>
+        <tr>
+          <th>Voter</th>
+          <th>Voted as</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody class="voters">
+
+      </tbody>
+    </table>
+    </small>
+    <p class="text-muted">Please select who you are voting as:</p>
+
+    {{#lengthEqual management 0}}
+        <input type="radio" name="votertype" id="votertype0" value="management" {{#is voterType "management"}}checked{{/is}}>
+        <label>Management</label>
+    {{/lengthEqual}}
+    {{#lengthEqual nonmanagement 0}}
+        <input type="radio" name="votertype" id="votertype1" value="non-management" {{#is voterType "non-management"}}checked{{/is}}>
+        <label>Non-management</label>
+    {{/lengthEqual}}
+    <div class="form-group">
+      <button type="button" class="btn btn-lg prev">Previous</button> <button type="button" {{#if voterType}}{{else}}disabled="disabled"{{/if}} class="btn btn-lg btn-primary next pull-right">Next</button>
+    </div>
+</form>
+

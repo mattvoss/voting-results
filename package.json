@@ -1,0 +1,47 @@
+{
+  "name": "VotingResultsApp",
+  "description": "An app to display votes",
+  "version": "0.1.0",
+  "author": "Matt Voss",
+  "repo": "git@admin.8xmedia.com:vpppa/voting.git",
+  "keywords": [ ],
+  "dependencies": {
+    "underscore": "latest",
+    "express.io": "latest",
+    "nodemailer": "latest",
+    "async": "latest",
+    "node-uuid": "latest",
+    "handlebars": "latest",
+    "redis": "latest",
+    "connect-redis": "~1.4.7",
+    "sequelize": "sequelize/sequelize",
+    "commander": "latest",
+    "swag": "latest",
+    "glob": "latest",
+    "moment": "latest",
+    "nconf": "latest",
+    "express-cache-control": "latest",
+    "mysql": "latest",
+    "node-registrants": "mattvoss/node-registrants"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-nodeunit": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "matchdep": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-handlebars": "latest",
+    "grunt-bower-task": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-express-server": "latest",
+    "grunt-node-inspector": "latest",
+    "grunt-json": "latest"
+  },
+  "scripts": {
+    "start": "grunt server"
+  },
+  "main": "server.js"
+}

@@ -1,0 +1,538 @@
+body {
+  padding-top: 0px;
+}
+
+#main {
+
+}
+.dashboard {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0 0px;
+  width: auto;
+}
+
+.dashboard .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#main #dash-row-1 {
+  margin-right: 0px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.next-buttons {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 70%;
+  float: left;
+}
+
+.keyboard-field {
+  margin-left: 5%;
+  width: 25%;
+  float: left;
+}
+
+.ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}
+
+#keyboard-wrap {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.ui-keyboard-button {
+  height: 4em;
+  width: 4em;
+}
+
+.ui-keyboard-button span {
+  font-size: 2.5em;
+}
+
+.ui-keyboard-actionkey {
+  width: auto;
+}
+
+.up, .down {
+  margin-top: 10px;
+}
+
+
+.foot-fixed-bottom {
+ bottom: 0;
+ display: block;
+ left: 0;
+ margin-bottom: 0;
+ position: fixed;
+ right: 0;
+ z-index: 1030;
+}
+.foot-fixed-bottom .container {
+ background-color: rgba(0, 0, 0, 0.8);
+ color: white;
+ margin-left: 0px;
+ margin-right: 0px;
+ padding-bottom: 2px;
+ width: 100%;
+ height: 50px;
+}
+.foot-fixed-bottom hr {
+ border-image: none;
+ border-style: solid none;
+ border-width: 1px 0;
+ margin: 0 0 5px;
+ width: 100%;
+}
+.foot-fixed-bottom p {
+ color: rgb(255, 255, 255);
+ font-size: 14px;
+ margin: 0 12px 15px;
+}
+
+.navbar-brand {
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+.logged-out {
+  display: block;
+}
+
+.logged-in, .hidden {
+  display: none;
+}
+
+.log-out {
+  margin-top: 10px;
+}
+
+#races-container {
+  margin-top: 10px;
+  border-top: 1px solid #ABAAA7;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#races-container .row {
+  border-bottom: 1px solid #ABAAA7;
+  margin: 8px 0px;
+  padding-bottom: 6px;
+}
+
+#mapCanvas {
+  width: 100%;
+  height: 500px;
+}
+
+#loginContainer {
+  height: 100%;
+  display: table;
+  position: absolute;
+ top: 0px; /* Header Height */
+ bottom: 0px; /* Footer Height */
+ width: 100%;
+}
+
+#loginContainer .row {
+  display:table-cell;
+  vertical-align: middle;
+  width: 60%;
+  height: 60%;
+  min-height: 550px;
+  padding: 40px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.login-title {
+  margin-top: 10px;
+}
+
+#raceCandidates {
+  margin-top: 8px;
+}
+
+.candidate {
+  margin-top: 10px;
+  border-bottom: 1px solid #ABAAA7;
+}
+
+.raceMapLevelButtons {
+  margin-bottom: 5px;
+}
+
+.activeMap {
+  cursor: default;
+}
+
+.selections {
+
+}
+
+
+#dash-header {
+  margin-top: 10px;
+}
+
+#sidebar {
+  background-color: #ecf0f1;
+  height: 100% !important;
+}
+
+#modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-left: 100px;
+  z-index: 10000;
+  position:   fixed;
+}
+
+#ideologyChart {
+  margin-left: -45px;
+}
+
+#ideologyChart svg {
+  height: 300px;
+}
+
+.race .candidates {
+  padding-top: 9px;
+}
+
+
+.breadcrumb-arrow li + li:before {
+  content: none;
+}
+
+.breadcrumb-arrow li:not(:first-child) {
+  margin-left: 0px;
+}
+
+.navbar-toggle {
+  float: left !important;
+}
+
+#frmAddCandidate {
+  min-height: 0px;
+}
+
+.add-candidate {
+  cursor: pointer;
+}
+
+/** Disabling padding **/
+.bootstrap-admin-without-padding{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+/** Login form **/
+.bootstrap-admin-login-form{
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-admin-login-form h1{
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.bootstrap-admin-login-form .form-group{
+    margin-bottom: 20px;
+}
+.bootstrap-admin-login-form label{
+    font-size: 15px;
+}
+.bootstrap-admin-login-form input[type="text"],
+.bootstrap-admin-login-form input[type="password"]{
+    font-size: 16px;
+    height: auto;
+    padding: 7px 9px;
+}
+.bootstrap-admin-login-form input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+/* Page headers */
+.bf-header {
+  padding: 30px 30px 40px;
+  font-size: 16px;
+  color: #5a5a5a;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bf-header p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.bf-header .container {
+  position: relative;
+}
+.bf-example-title {
+  border-left: 3px solid #08d;
+  padding-left: 10px;
+  line-height: 24px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.help-inline[data-error]{
+  color: #a5281b;
+}
+
+/* Tablets and up */
+@media screen and (min-width: 768px) {
+
+  .bf-header {
+    font-size: 21px;
+    text-align: left;
+  }
+  .bf-header h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+}
+
+/* Tablets/desktops and up */
+@media screen and (min-width: 992px) {
+  .bf-header h1,
+  .bf-header p {
+    margin-right: 380px;
+  }
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.panel-default {
+  border-color: #ddd;
+}
+
+.quick-pie a {
+  display: block;
+}
+
+.piechart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.piechart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+
+.piechart-percentage,
+.piechart-label {
+    text-align: center;
+    color: #333;
+    font-weight: 100;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.scrollable-dropdown-menu .tt-dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+
+.iradio_line-aero {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.voterType .iradio_line-aero,
+.candidates .iradio_line-aero {
+  font-size: 25px;
+}
+
+.cast-vote {
+  padding: 50px;
+  font-size: 30px;
+}
+
+/*!
+* jquery.fixedHeaderTable. The jQuery fixedHeaderTable plugin
+*
+* Copyright (c) 2011 Mark Malek
+* http://fixedheadertable.com
+*
+* Licensed under MIT
+* http://www.opensource.org/licenses/mit-license.php
+*
+* http://docs.jquery.com/Plugins/Authoring
+* jQuery authoring guidelines
+*
+* Launch  : October 2009
+* Version : 1.3
+* Released: May 9th, 2011
+*
+*
+* all CSS sizing (width,height) is done in pixels (px)
+*/
+
+/* @group Reset */
+
+.fht-table,
+.fht-table thead,
+.fht-table tfoot,
+.fht-table tbody,
+.fht-table tr,
+.fht-table th,
+.fht-table td {
+  /* position */
+  margin: 0;
+
+  /* size */
+  padding: 0;
+
+  /* text */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+}
+
+.fht-table {
+  /* appearance */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* @end */
+
+/* @group Content */
+
+.fht-table-wrapper,
+.fht-table-wrapper .fht-thead,
+.fht-table-wrapper .fht-tfoot,
+.fht-table-wrapper .fht-fixed-column .fht-tbody,
+.fht-table-wrapper .fht-fixed-body .fht-tbody,
+.fht-table-wrapper .fht-tbody {
+  /* appearance */
+  overflow: hidden;
+
+  /* position */
+  position: relative;
+}
+
+.fht-table-wrapper .fht-fixed-body .fht-tbody,
+.fht-table-wrapper .fht-tbody {
+  /* appearance */
+  overflow: hidden;
+}
+
+.fht-table-wrapper .fht-table .fht-cell {
+  /* appearance */
+  overflow: hidden;
+
+  /* size */
+  height: 1px;
+}
+
+.fht-table-wrapper .fht-fixed-column,
+.fht-table-wrapper .fht-fixed-body {
+  /* position */
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.fht-table-wrapper .fht-fixed-column {
+  /* position */
+  z-index: 1;
+}
+
+/* @end */
+
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: block !important;
+  }
+}
+
+
+/* -------------------------------------------------------- */
+/*                                                          */
+/* A media query that captures:                             */
+/*                                                          */
+/* - Retina iOS devices                                     */
+/* - Retina Macs running Safari                             */
+/* - High DPI Windows PCs running IE 8 and above            */
+/* - Low DPI Windows PCs with IE zoomed in                  */
+/* - Android hdpi devices and above                         */
+/* - Android tvdpi devices, including Google Nexus 7        */
+/* - Chrome running on high DPI Macs and PCs                */
+/*                                                          */
+/* Please note that that this code assumes you'll swap a    */
+/* 2× version of your images. If you'd like to supply       */
+/* finer increments, other thresholds might be appropriate. */
+/*                                                          */
+/*                                @marcedwards from @bjango */
+/*                                                          */
+/* -------------------------------------------------------- */
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 1.3),
+  only screen and (min-device-pixel-ratio: 1.3),
+  only screen and (min-resolution: 120dpi)
+  {
+    /* Your code to swap higher DPI images */
+
+    #loginContainer .row {
+      width: 100%;
+      padding: 5px;
+    }
+
+  }
